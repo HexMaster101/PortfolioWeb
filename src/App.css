@@ -11,6 +11,11 @@
 	src: url(font/WorkSans-VariableFont_wght.ttf);
 }
 
+@font-face {
+	font-family: italicFont;
+	src: url(font/Ephesis-Regular.ttf);
+}
+
 a {
 	text-decoration: none;
 }
@@ -22,14 +27,42 @@ main[name="outer"] {
 }
 
 main[name="inner"] {
+	position: relative;
 	max-width: 1600px;
 	width: 100%;
+}
+
+/* <-----Vertical Line-----> */
+
+.absolute {
+	position: absolute;
+}
+
+.vertical-line {
+	width: 0px;
+	height: 1000px;
+	border: 1.6px #007292 solid;
+	border-radius: 100px;
+	top: 220px;
+	left: 20%;
+	bottom: 0;
+}
+
+.home-text {
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: 400;
+	top: 220px;
+	left: 20%;
 }
 
 /* <-----Navbar-----> */
 
 .navbar {
+	position: fixed;
+	backdrop-filter: blur(1.2px);
 	display: flex;
+	width: 100%;
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 16px 14px;
@@ -60,5 +93,34 @@ nav {
 }
 
 .nav-links a:hover {
-	color: #6f6f6f;
+	color: #80adb9;
+}
+
+/* <----Main Body----> */
+
+.home-background {
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("images/background-1747784_1920.jpg");
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.intro {
+	margin-left: 23%;
+}
+
+.intro-text {
+	font-weight: 500;
+	font-size: 38px;
+}
+
+.intro-text span {
+	font-size: 50px;
+	font-family: italicFont;
+	font-weight: 500;
+	color: #007292;
 }
