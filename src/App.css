@@ -52,7 +52,7 @@ main[name="inner"] {
 	margin-left: 20px;
 	font-size: 20px;
 	font-weight: 400;
-	top: 220px;
+	top: 217px;
 	left: 20%;
 }
 
@@ -66,6 +66,7 @@ main[name="inner"] {
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 16px 14px;
+	transition: all 1s;
 }
 
 .nav-head {
@@ -118,9 +119,19 @@ nav {
 	font-size: 38px;
 }
 
-.intro-text span {
+.my-name {
+	font-weight: 500;
+	color: #005a68;
+}
+
+.word-design {
 	font-size: 50px;
 	font-family: italicFont;
 	font-weight: 500;
-	color: #007292;
+	color: #005a68;
+}
+
+.intro-para {
+	margin-top: 20px;
+	font-size: 24px;
 }
