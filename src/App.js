@@ -1,7 +1,8 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
 import VerticalLine from "./components/VerticalLine";
+import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 				<Navbar name="Tanishk Gupta | portfolio" />
 				<VerticalLine />
 				<Home />
+				<About />
 			</main>
 		</main>
 	);

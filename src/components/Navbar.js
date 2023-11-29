@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import React from "react";
 
 const hideNavWhileScrolling = (id = "navbar", offset = 100, when = true) => {
 	const nav = document.getElementById(id);
@@ -22,7 +23,7 @@ export default function Navbar({ name }) {
 	}, []);
 
 	return (
-		<header id="navbar" className="navbar">
+		<header id="navbar">
 			<h1 className="nav-head">{name}</h1>
 			<nav>
 				<li className="nav-links">

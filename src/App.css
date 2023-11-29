@@ -27,7 +27,6 @@ main[name="outer"] {
 }
 
 main[name="inner"] {
-	position: relative;
 	max-width: 1600px;
 	width: 100%;
 }
@@ -39,9 +38,8 @@ main[name="inner"] {
 }
 
 .vertical-line {
-	width: 0px;
 	height: 1000px;
-	border: 1.6px #007292 solid;
+	border: 2px #007292 solid;
 	border-radius: 100px;
 	top: 220px;
 	left: 20%;
@@ -58,9 +56,9 @@ main[name="inner"] {
 
 /* <-----Navbar-----> */
 
-.navbar {
+#navbar {
 	position: fixed;
-	backdrop-filter: blur(1.2px);
+	backdrop-filter: blur(2px);
 	display: flex;
 	width: 100%;
 	flex-direction: row;
@@ -97,9 +95,9 @@ nav {
 	color: #80adb9;
 }
 
-/* <----Main Body----> */
+/* <----Home Section----> */
 
-.home-background {
+#home-background {
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -111,6 +109,7 @@ nav {
 }
 
 .intro {
+	margin-top: 60px;
 	margin-left: 23%;
 }
 
@@ -132,6 +131,14 @@ nav {
 }
 
 .intro-para {
-	margin-top: 20px;
+	margin-top: 32px;
 	font-size: 24px;
+	font-weight: 400;
+}
+
+/* <----About me----> */
+
+#about-me {
+	background-color: #9be8f1;
+	height: 100vh;
 }
