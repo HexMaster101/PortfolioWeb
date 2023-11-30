@@ -24,15 +24,17 @@ export default function Navbar({ name }) {
 
 	return (
 		<header id="navbar">
-			<h1 className="nav-head">{name}</h1>
-			<nav>
-				<li className="nav-links">
-					<a href="/">About</a>
-				</li>
-				<li className="nav-links">
-					<a href="/">Contact</a>
-				</li>
-			</nav>
+			<div className="container navbar">
+				<h1 className="nav-head">{name}</h1>
+				<nav>
+					<li className="nav-links">
+						<a href="/">About</a>
+					</li>
+					<li className="nav-links">
+						<a href="/">Contact</a>
+					</li>
+				</nav>
+			</div>
 		</header>
 	);
 }

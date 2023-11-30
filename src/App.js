@@ -6,13 +6,11 @@ import About from "./components/About";
 
 function App() {
 	return (
-		<main name="outer">
-			<main name="inner">
-				<Navbar name="Tanishk Gupta | portfolio" />
-				<VerticalLine />
-				<Home />
-				<About />
-			</main>
+		<main name="inner">
+			<Navbar name="Tanishk Gupta | portfolio" />
+			<VerticalLine />
+			<Home />
+			<About />
 		</main>
 	);
 }

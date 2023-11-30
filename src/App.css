@@ -20,51 +20,68 @@ a {
 	text-decoration: none;
 }
 
-main[name="outer"] {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-main[name="inner"] {
+.container {
+	position: relative;
 	max-width: 1600px;
-	width: 100%;
+	margin: 0 auto;
 }
-
 /* <-----Vertical Line-----> */
 
-.absolute {
-	position: absolute;
-}
-
 .vertical-line {
+	position: absolute;
+	margin-left: 2.92px;
 	height: 1000px;
 	border: 2px #007292 solid;
-	border-radius: 100px;
-	top: 220px;
-	left: 20%;
+	top: 230px;
+	left: 19%;
 	bottom: 0;
 }
 
+.line-ring {
+	position: absolute;
+	border: 3px #007292 solid;
+	height: 9px;
+	width: 9px;
+	border-radius: 100px;
+	top: 223px;
+	left: 19%;
+}
+
 .home-text {
-	margin-left: 20px;
+	position: absolute;
+	margin-left: 36px;
 	font-size: 20px;
 	font-weight: 400;
-	top: 217px;
-	left: 20%;
+	top: 215px;
+	left: 19%;
+}
+
+.about-text {
+	display: inline-block;
+	position: relative;
+	left: 19%;
+	top: 50px;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 32px;
 }
 
 /* <-----Navbar-----> */
 
 #navbar {
 	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	backdrop-filter: blur(2px);
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	justify-content: space-between;
 	padding: 16px 14px;
 	transition: all 1s;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .nav-head {
@@ -98,11 +115,14 @@ nav {
 /* <----Home Section----> */
 
 #home-background {
-	height: 100vh;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url("images/background-1747784_1920.jpg");
+}
+
+.home-background {
+	height: 100vh;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -138,7 +158,7 @@ nav {
 
 /* <----About me----> */
 
-#about-me {
-	background-color: #9be8f1;
+#about-section {
+	background-color: skyblue;
 	height: 100vh;
 }

@@ -2,9 +2,9 @@ import React from "react";
 
 export default function VerticalLine() {
 	return (
-		<>
-			<div className="absolute vertical-line"></div>
-			<p className="absolute home-text">Home/{">"}</p>
-		</>
+		<div className="container">
+			<div className="vertical-line"></div>
+			<div className="line-ring"></div>
+		</div>
 	);
 }
