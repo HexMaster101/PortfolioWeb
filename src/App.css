@@ -6,6 +6,15 @@
 	font-weight: 350;
 }
 
+svg#mouse {
+	z-index: 50;
+	position: absolute;
+	height: 30px;
+	top: 500px;
+	left: 18%;
+	color: #696969;
+}
+
 @font-face {
 	font-family: myFont;
 	src: url(font/WorkSans-VariableFont_wght.ttf);
@@ -25,51 +34,73 @@ a {
 	max-width: 1600px;
 	margin: 0 auto;
 }
+
 /* <-----Vertical Line-----> */
 
-.vertical-line {
+.timeline {
 	position: absolute;
-	margin-left: 2.92px;
+	/* margin-left: 2.92px; */
+	margin-left: 13.5px;
 	height: 1000px;
-	border: 2px #007292 solid;
+	border: 2px #1b92b6 solid;
 	top: 230px;
-	left: 19%;
-	bottom: 0;
+	left: 18%;
 }
 
-.line-ring {
+.bullet {
 	position: absolute;
-	border: 3px #007292 solid;
+	margin-left: 11px;
+	border: 3px #1b9bc6 solid;
 	height: 9px;
 	width: 9px;
 	border-radius: 100px;
 	top: 223px;
-	left: 19%;
+	left: 18%;
 }
 
 .home-text {
 	position: absolute;
-	margin-left: 36px;
+	margin-left: 50px;
 	font-size: 20px;
 	font-weight: 400;
 	top: 215px;
-	left: 19%;
+	left: 18%;
 }
 
 .about-text {
 	display: inline-block;
 	position: relative;
-	left: 19%;
+	left: 18%;
 	top: 50px;
 	font-size: 20px;
 	font-weight: 400;
-	margin-left: 32px;
+	margin-left: 54px;
+}
+
+svg#mouse {
+	z-index: 50;
+	position: absolute;
+	height: 30px;
+	top: 510px;
+	left: 18%;
+}
+
+span[name="scroll-button"] {
+	font-weight: 500;
+	z-index: 60;
+	left: 18%;
+	top: 540px;
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	transform: translate(-24.5px, 35px) rotate(-90deg);
 }
 
 /* <-----Navbar-----> */
 
 #navbar {
 	position: fixed;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -115,6 +146,7 @@ nav {
 /* <----Home Section----> */
 
 #home-background {
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

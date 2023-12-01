@@ -3,9 +3,9 @@ import React from "react";
 export default function Home() {
 	return (
 		<>
-			<div id="home-background">
+			<section id="home-background">
 				<div className="container home-background">
-					<p className="absolute home-text">Home/{">"}</p>
+					<p className=" home-text">Home/{">"}</p>
 					<div className="intro">
 						<h1 className="intro-text">
 							Hii, My Name Is <span className="my-name">Tanishk Gupta</span>
@@ -17,7 +17,7 @@ export default function Home() {
 						<p className="intro-para">Let me show You...</p>
 					</div>
 				</div>
-			</div>
+			</section>
 		</>
 	);
 }

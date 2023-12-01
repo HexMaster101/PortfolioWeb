@@ -28,7 +28,7 @@ export default function Navbar({ name }) {
 				<h1 className="nav-head">{name}</h1>
 				<nav>
 					<li className="nav-links">
-						<a href="/">About</a>
+						<a href="#about-section">About</a>
 					</li>
 					<li className="nav-links">
 						<a href="/">Contact</a>
