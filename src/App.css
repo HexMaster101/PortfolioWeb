@@ -6,13 +6,8 @@
 	font-weight: 350;
 }
 
-svg#mouse {
-	z-index: 50;
-	position: absolute;
-	height: 30px;
-	top: 500px;
-	left: 18%;
-	color: #696969;
+body {
+	cursor: default;
 }
 
 @font-face {
@@ -81,19 +76,20 @@ svg#mouse {
 	z-index: 50;
 	position: absolute;
 	height: 30px;
-	top: 510px;
+	top: 240px;
 	left: 18%;
+	transform: translate(-15px, 35px);
 }
 
 span[name="scroll-button"] {
 	font-weight: 500;
 	z-index: 60;
 	left: 18%;
-	top: 540px;
+	top: 300px;
 	color: black;
 	font-size: 20px;
 	position: absolute;
-	transform: translate(-24.5px, 35px) rotate(-90deg);
+	transform: translate(-40px, 35px) rotate(-90deg);
 }
 
 /* <-----Navbar-----> */
@@ -191,6 +187,6 @@ nav {
 /* <----About me----> */
 
 #about-section {
-	background-color: rgb(27, 157, 159);
+	background-color: #ddeef2;
 	height: 100vh;
 }
