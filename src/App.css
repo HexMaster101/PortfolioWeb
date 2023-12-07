@@ -8,6 +8,7 @@
 
 body {
 	cursor: default;
+	overflow-x: hidden;
 }
 
 @font-face {
@@ -34,57 +35,53 @@ a {
 
 .timeline {
 	position: absolute;
-	/* margin-left: 2.92px; */
 	margin-left: 13.5px;
-	height: 1000px;
+	height: 1500px;
 	border: 2px #1b92b6 solid;
 	top: 230px;
-	left: 18%;
+	left: 19%;
+	transform: translate(-40px, 0px);
 }
 
 .bullet {
 	position: absolute;
-	margin-left: 11px;
 	border: 3px #1b9bc6 solid;
 	height: 9px;
 	width: 9px;
 	border-radius: 100px;
 	top: 223px;
-	left: 18%;
+	left: 19%;
+	margin-left: -29px;
 }
 
 .home-text {
 	position: absolute;
-	margin-left: 50px;
 	font-size: 20px;
 	font-weight: 400;
 	top: 215px;
-	left: 18%;
+	left: 19%;
 }
 
 .about-text {
 	display: inline-block;
 	position: relative;
-	left: 18%;
-	top: 50px;
-	font-size: 20px;
+	left: 19%;
+	top: 30px;
+	font-size: 16px;
 	font-weight: 400;
-	margin-left: 54px;
 }
 
 svg#mouse {
-	z-index: 50;
+	z-index: 10;
 	position: absolute;
 	height: 30px;
 	top: 240px;
-	left: 18%;
 	transform: translate(-15px, 35px);
 }
 
 span[name="scroll-button"] {
 	font-weight: 500;
 	z-index: 60;
-	left: 18%;
 	top: 300px;
 	color: black;
 	font-size: 20px;
@@ -158,7 +155,7 @@ nav {
 
 .intro {
 	margin-top: 60px;
-	margin-left: 23%;
+	margin-left: 19%;
 }
 
 .intro-text {
@@ -187,6 +184,77 @@ nav {
 /* <----About me----> */
 
 #about-section {
-	background-color: #ddeef2;
-	height: 100vh;
+	background-color: #f4fafb;
+}
+
+.myDetailsContainer {
+	padding-right: 20px;
+	margin: 65px 0 0 19%;
+}
+
+.codeLine {
+	position: relative;
+}
+
+.myDetailsContainer .codeLine:hover:after {
+	background-color: rgba(135, 207, 235, 0.261);
+	content: "";
+	height: 100%;
+	left: -100%;
+	position: absolute;
+	top: 0;
+	width: 300%;
+}
+
+.codeLine::before {
+	transform: translate(-60px, 0);
+	font-family: sans-serif;
+	font-size: 16px;
+	color: gray;
+	content: attr(data-line-nr);
+	position: absolute;
+	margin-top: 7.25px;
+}
+
+.colorPink {
+	color: rgb(219, 17, 148);
+}
+
+.colorPurple {
+	color: rgb(84, 26, 200);
+}
+
+.colorBlue {
+	color: rgb(11, 169, 231);
+}
+
+.colorGrey {
+	color: grey;
+}
+
+.colorGreen {
+	color: rgb(26, 177, 26);
+}
+
+.colorYellow {
+	color: rgb(255, 166, 0);
+}
+
+.emptyLine {
+	height: 30px;
+}
+
+.codeLine h1 {
+	font-size: 18px;
+	line-height: 21.5px;
+	font-weight: 400;
+	padding: 4.25px 0;
+}
+
+.codeLine span {
+	font-weight: 500;
+}
+
+span[name="dots"] {
+	color: grey;
 }
