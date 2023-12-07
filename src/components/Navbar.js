@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 import React from "react";
 
 const hideNavWhileScrolling = (id = "navbar", offset = 100, when = true) => {
@@ -25,14 +26,43 @@ export default function Navbar({ name }) {
 	return (
 		<header id="navbar">
 			<div className="container navbar">
-				<h1 className="nav-head">{name}</h1>
+				<motion.h1
+					variants={{
+						hidden: { opacity: 0 },
+						visible: { opacity: 1 },
+					}}
+					initial="hidden"
+					animate="visible"
+					transition={{ duration: 0.4 }}
+					className="nav-head"
+				>
+					{name}
+				</motion.h1>
 				<nav>
-					<li className="nav-links">
+					<motion.li
+						variants={{
+							hidden: { opacity: 0, y: -25 },
+							visible: { opacity: 1, y: 0 },
+						}}
+						initial="hidden"
+						animate="visible"
+						transition={{ delay: 0.7 }}
+						className="nav-links"
+					>
 						<a href="#about-section">About</a>
-					</li>
-					<li className="nav-links">
+					</motion.li>
+					<motion.li
+						variants={{
+							hidden: { opacity: 0, y: -25 },
+							visible: { opacity: 1, y: 0 },
+						}}
+						initial="hidden"
+						animate="visible"
+						transition={{ delay: 0.8 }}
+						className="nav-links"
+					>
 						<a href="/">Contact</a>
-					</li>
+					</motion.li>
 				</nav>
 			</div>
 		</header>

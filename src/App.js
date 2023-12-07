@@ -7,7 +7,7 @@ import About from "./components/About";
 function App() {
 	return (
 		<main name="inner">
-			<Navbar name="Tanishk Gupta | portfolio" />
+			<Navbar name="Tanishk Gupta | Portfolio" />
 			<VerticalLine />
 			<Home />
 			<About />

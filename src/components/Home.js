@@ -13,7 +13,7 @@ export default function Home() {
 						}}
 						initial="hidden"
 						animate="visible"
-						transition={{ delay: 0.25 }}
+						transition={{ delay: 1.1 }}
 						className=" home-text"
 					>
 						Home/{">"}
@@ -25,7 +25,7 @@ export default function Home() {
 						}}
 						initial="hidden"
 						animate="visible"
-						transition={{ delay: 0.65 }}
+						transition={{ delay: 1.4 }}
 						className="intro"
 					>
 						<h1 className="intro-text">

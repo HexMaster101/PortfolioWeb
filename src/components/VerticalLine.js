@@ -12,7 +12,7 @@ export default function VerticalLine() {
 					}}
 					initial="hidden"
 					animate="visible"
-					transition={{ delay: 0.25 }}
+					transition={{ delay: 1.1 }}
 					href="#about-section"
 				>
 					<svg
