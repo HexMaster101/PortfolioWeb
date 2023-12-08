@@ -3,7 +3,12 @@
 	"ignorePaths": [],
 	"dictionaryDefinitions": [],
 	"dictionaries": [],
-	"words": ["Tanishk"],
+	"words": [
+		"Canva",
+		"CBSE",
+		"Photoshop",
+		"Tanishk"
+	],
 	"ignoreWords": [],
 	"import": []
 }

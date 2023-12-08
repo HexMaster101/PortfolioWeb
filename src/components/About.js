@@ -166,6 +166,12 @@ export default function About() {
 						</h1>
 					</div>
 				</div>
+
+				{/* <------TIMELINE--------> */}
+
+				<div className="timeline">
+					<div className="bullet"></div>
+				</div>
 			</div>
 		</section>
 	);

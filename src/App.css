@@ -33,25 +33,35 @@ a {
 
 /* <-----Vertical Line-----> */
 
+.timeline-home {
+	top: 230px !important;
+}
+
+.bullet-home {
+	background-color: transparent !important;
+	top: -9px !important;
+}
+
 .timeline {
 	position: absolute;
+	height: 100%;
 	margin-left: 13.5px;
-	height: 1500px;
 	border: 2px #1b92b6 solid;
-	top: 230px;
+	top: 0px;
 	left: 19%;
 	transform: translate(-40px, 0px);
 }
 
 .bullet {
+	background-color: #f4fafb;
 	position: absolute;
-	border: 3px #1b9bc6 solid;
+	border: 3px #1b92b6 solid;
 	height: 9px;
 	width: 9px;
 	border-radius: 100px;
-	top: 223px;
+	top: 34px;
+	margin-left: -4.25px;
 	left: 19%;
-	margin-left: -29px;
 }
 
 .home-text {
@@ -72,7 +82,6 @@ a {
 }
 
 svg#mouse {
-	z-index: 10;
 	position: absolute;
 	height: 30px;
 	top: 240px;
@@ -81,7 +90,6 @@ svg#mouse {
 
 span[name="scroll-button"] {
 	font-weight: 500;
-	z-index: 60;
 	top: 300px;
 	color: black;
 	font-size: 20px;
@@ -92,8 +100,8 @@ span[name="scroll-button"] {
 /* <-----Navbar-----> */
 
 #navbar {
-	position: fixed;
 	z-index: 100;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -139,7 +147,6 @@ nav {
 /* <----Home Section----> */
 
 #home-background {
-	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -189,7 +196,7 @@ nav {
 
 .myDetailsContainer {
 	padding-right: 20px;
-	margin: 65px 0 0 19%;
+	margin: 56px 0 0 19%;
 }
 
 .codeLine {
@@ -197,13 +204,14 @@ nav {
 }
 
 .myDetailsContainer .codeLine:hover:after {
-	background-color: rgba(135, 207, 235, 0.261);
+	background-color: rgba(135, 207, 235, 0.423);
 	content: "";
 	height: 100%;
-	left: -100%;
+	left: -24.8%;
 	position: absolute;
 	top: 0;
-	width: 300%;
+	right: 0;
+	width: 100vw;
 }
 
 .codeLine::before {
@@ -233,7 +241,7 @@ nav {
 }
 
 .colorGreen {
-	color: rgb(26, 177, 26);
+	color: rgb(34, 168, 34);
 }
 
 .colorYellow {
@@ -257,4 +265,11 @@ nav {
 
 span[name="dots"] {
 	color: grey;
+}
+
+/* <----About me----> */
+
+#wid-section {
+	background-color: #ffffff;
+	height: 100vh;
 }
