@@ -13,7 +13,7 @@ export default function Home() {
 					initial="hidden"
 					animate="visible"
 					transition={{ delay: 1.1 }}
-					className=" home-text"
+					className="home-text"
 				>
 					Home/{">"}
 				</motion.p>
@@ -39,7 +39,7 @@ export default function Home() {
 
 				{/* <------TIMELINE--------> */}
 
-				<div className="timeline-home timeline">
+				<div className="timeline-home">
 					<div className="bullet-home bullet"></div>
 					<a href="#about-section">
 						<svg

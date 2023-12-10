@@ -34,7 +34,13 @@ a {
 /* <-----Vertical Line-----> */
 
 .timeline-home {
-	top: 230px !important;
+	position: absolute;
+	height: 65%;
+	bottom: 0;
+	left: 19%;
+	margin-left: 13.5px;
+	border: 2px #1b92b6 solid;
+	transform: translate(-40px, 0px);
 }
 
 .bullet-home {
@@ -47,7 +53,8 @@ a {
 	height: 100%;
 	margin-left: 13.5px;
 	border: 2px #1b92b6 solid;
-	top: 0px;
+	top: 0;
+	bottom: 0;
 	left: 19%;
 	transform: translate(-40px, 0px);
 }
@@ -66,9 +73,10 @@ a {
 
 .home-text {
 	position: absolute;
-	font-size: 20px;
-	font-weight: 400;
-	top: 215px;
+	font-size: 16px;
+	font-weight: 500;
+	top: 35%;
+	margin-top: -14px;
 	left: 19%;
 }
 
@@ -78,7 +86,7 @@ a {
 	left: 19%;
 	top: 30px;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 svg#mouse {
@@ -191,8 +199,68 @@ nav {
 
 /* <----About me----> */
 
-#about-section {
+#wid-section {
+	height: 100vh;
+	max-height: 800px;
 	background-color: #f4fafb;
+}
+
+.wid-content {
+	display: grid;
+	column-gap: 30px;
+	margin-top: 30px;
+	grid-template-columns: 580px 1fr;
+	width: 100%;
+	padding: 30px 0px 30px 0px;
+}
+
+.wid-content .content {
+	padding: 30px;
+}
+
+.lottie {
+	justify-self: end;
+	position: relative;
+	z-index: 10;
+}
+
+.wid-subhead {
+	text-align: center;
+	font-weight: 400;
+	font-size: 28px;
+	color: #64a7b8;
+}
+
+.skillsCon {
+	margin-top: 42px;
+	justify-content: center;
+	flex-direction: row;
+	display: flex;
+}
+
+.skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	--tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+		0 2px 4px -2px var(--tw-shadow-color);
+	--tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -2px rgba(0, 0, 0, 0.1);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+	background-color: #ffffff;
+	border-radius: 50%;
+	padding: 14px;
+	margin: 0 4px;
+	height: 62px;
+	width: 62px;
+}
+
+/* <----About me----> */
+
+#about-section {
+	background-color: #ffffff;
 }
 
 .myDetailsContainer {
@@ -266,30 +334,4 @@ nav {
 
 span[name="dots"] {
 	color: grey;
-}
-
-/* <----About me----> */
-
-#wid-section {
-	background-color: #ffffff;
-}
-
-.wid-heading {
-	text-align: center;
-	padding-top: 32px;
-}
-
-.about-content {
-	width: 100%;
-	padding: 30px 30px 30px 0px;
-}
-
-.lottie-container {
-	position: relative;
-	margin: 0;
-	height: 500px;
-	width: 500px;
-	margin-left: 19%;
-	transform: translate(-140px, 0px);
-	z-index: 10;
 }
