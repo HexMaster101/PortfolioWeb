@@ -163,6 +163,7 @@ nav {
 .intro {
 	margin-top: 60px;
 	margin-left: 19%;
+	padding-left: 40px;
 }
 
 .intro-text {
@@ -271,5 +272,24 @@ span[name="dots"] {
 
 #wid-section {
 	background-color: #ffffff;
-	height: 100vh;
+}
+
+.wid-heading {
+	text-align: center;
+	padding-top: 32px;
+}
+
+.about-content {
+	width: 100%;
+	padding: 30px 30px 30px 0px;
+}
+
+.lottie-container {
+	position: relative;
+	margin: 0;
+	height: 500px;
+	width: 500px;
+	margin-left: 19%;
+	transform: translate(-140px, 0px);
+	z-index: 10;
 }

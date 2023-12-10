@@ -6,13 +6,13 @@ export default function About() {
 			<div className="container">
 				<p className="about-text">About/{">"}</p>
 				<div className="myDetailsContainer">
-					<div data-line-nr="01" class="codeLine">
+					<div data-line-nr="01" className="codeLine">
 						<h1>
 							<span className="colorPink">class</span>{" "}
 							<span className="colorBlue">Tanishk_Gupta( )</span>:
 						</h1>
 					</div>
-					<div data-line-nr="02" class="codeLine">
+					<div data-line-nr="02" className="codeLine">
 						<h1>
 							<span name="dots">· ·</span>{" "}
 							<span className="colorGrey">
@@ -20,7 +20,7 @@ export default function About() {
 							</span>
 						</h1>
 					</div>
-					<div data-line-nr="03" class="codeLine">
+					<div data-line-nr="03" className="codeLine">
 						<h1>
 							<span name="dots">· ·</span>{" "}
 							<span className="colorGrey">
@@ -28,7 +28,7 @@ export default function About() {
 							</span>
 						</h1>
 					</div>
-					<div data-line-nr="04" class="codeLine">
+					<div data-line-nr="04" className="codeLine">
 						<h1>
 							<span name="dots">· ·</span>{" "}
 							<span className="colorGrey">
@@ -36,15 +36,15 @@ export default function About() {
 							</span>
 						</h1>
 					</div>
-					<div data-line-nr="05" class="codeLine emptyLine"></div>
-					<div data-line-nr="06" class="codeLine">
+					<div data-line-nr="05" className="codeLine emptyLine"></div>
+					<div data-line-nr="06" className="codeLine">
 						<h1>
 							<span name="dots">· ·</span>{" "}
 							<span className="colorPink">def</span>
 							<span className="colorPurple"> __init__(self)</span>:
 						</h1>
 					</div>
-					<div data-line-nr="07" class="codeLine">
+					<div data-line-nr="07" className="codeLine">
 						<h1>
 							<span name="dots">· · · ·</span>{" "}
 							<span className="colorPurple">self</span>.name{" "}
@@ -52,7 +52,7 @@ export default function About() {
 							<span className="colorYellow">' Tanishk Gupta'</span>
 						</h1>
 					</div>
-					<div data-line-nr="08" class="codeLine">
+					<div data-line-nr="08" className="codeLine">
 						<h1>
 							<span name="dots">· · · ·</span>{" "}
 							<span className="colorPurple">self</span>.birthUnixTimestamp{" "}
@@ -60,7 +60,7 @@ export default function About() {
 							<span className="colorPurple">1070043300</span>
 						</h1>
 					</div>
-					<div data-line-nr="09" class="codeLine">
+					<div data-line-nr="09" className="codeLine">
 						<h1>
 							<span name="dots">· · · ·</span>{" "}
 							<span className="colorPurple">self</span>.email{" "}
@@ -68,8 +68,8 @@ export default function About() {
 							<span className="colorYellow">'luckygupta9219@gmail.com'</span>
 						</h1>
 					</div>
-					<div data-line-nr="10" class="codeLine emptyLine"></div>
-					<div data-line-nr="11" class="codeLine">
+					<div data-line-nr="10" className="codeLine emptyLine"></div>
+					<div data-line-nr="11" className="codeLine">
 						<h1>
 							<span name="dots">· ·</span>{" "}
 							<span className="colorPink">def</span>
@@ -80,7 +80,7 @@ export default function About() {
 							:
 						</h1>
 					</div>
-					<div data-line-nr="12" class="codeLine">
+					<div data-line-nr="12" className="codeLine">
 						<h1>
 							<span name="dots">· · · ·</span>{" "}
 							<span className="colorPurple">self</span>.underGraduationBoard{" "}
@@ -88,7 +88,7 @@ export default function About() {
 							<span className="colorYellow">'CBSE Board'</span>
 						</h1>
 					</div>
-					<div data-line-nr="13" class="codeLine">
+					<div data-line-nr="13" className="codeLine">
 						<h1>
 							<span name="dots">· · · ·</span>{" "}
 							<span className="colorPurple">self</span>.graduation{" "}
@@ -96,7 +96,7 @@ export default function About() {
 							<span className="colorGreen"> {`{`}</span>
 						</h1>
 					</div>
-					<div data-line-nr="14" class="codeLine">
+					<div data-line-nr="14" className="codeLine">
 						<h1>
 							<span name="dots">· · · · · ·</span>{" "}
 							<span className="colorYellow">'2021 - 2024' </span>:
@@ -106,7 +106,7 @@ export default function About() {
 							</span>
 						</h1>
 					</div>
-					<div data-line-nr="15" class="codeLine">
+					<div data-line-nr="15" className="codeLine">
 						<h1>
 							<span name="dots">· · · · · ·</span>{" "}
 							<span className="colorYellow">'2025 - 2027' </span>:
@@ -117,14 +117,14 @@ export default function About() {
 							</span>
 						</h1>
 					</div>
-					<div data-line-nr="16" class="codeLine">
+					<div data-line-nr="16" className="codeLine">
 						<h1>
 							<span name="dots">· · · ·</span>{" "}
 							<span className="colorGreen"> {`}`}</span>
 						</h1>
 					</div>
-					<div data-line-nr="17" class="codeLine emptyLine"></div>
-					<div data-line-nr="18" class="codeLine">
+					<div data-line-nr="17" className="codeLine emptyLine"></div>
+					<div data-line-nr="18" className="codeLine">
 						<h1>
 							<span name="dots">· ·</span>{" "}
 							<span className="colorPink">def</span>
@@ -135,14 +135,14 @@ export default function About() {
 							:
 						</h1>
 					</div>
-					<div data-line-nr="19" class="codeLine">
+					<div data-line-nr="19" className="codeLine">
 						<h1>
 							<span name="dots">· · · ·</span>{" "}
 							<span className="colorPink">return</span>{" "}
 							<span className="colorGreen"> {`{`}</span>
 						</h1>
 					</div>
-					<div data-line-nr="20" class="codeLine">
+					<div data-line-nr="20" className="codeLine">
 						<h1>
 							<span name="dots">· · · · · ·</span>{" "}
 							<span className="colorYellow">
@@ -152,14 +152,14 @@ export default function About() {
 							</span>
 						</h1>
 					</div>
-					<div data-line-nr="21" class="codeLine">
+					<div data-line-nr="21" className="codeLine">
 						<h1>
 							<span name="dots">· · · ·</span>{" "}
 							<span className="colorGreen"> {`}`}</span>
 						</h1>
 					</div>
-					<div data-line-nr="22" class="codeLine emptyLine"></div>
-					<div data-line-nr="23" class="codeLine">
+					<div data-line-nr="22" className="codeLine emptyLine"></div>
+					<div data-line-nr="23" className="codeLine">
 						<h1>
 							myDetails<span className="colorPink"> =</span>
 							<span className="colorBlue"> Tanishk_Gupta( )</span>
