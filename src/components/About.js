@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
 	return (
 		<section id="about-section">
-			<div className="container">
+			<div className="container about-section">
 				<p className="about-text">About/{">"}</p>
 				<div className="myDetailsContainer">
 					<div data-line-nr="01" className="codeLine">
