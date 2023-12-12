@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import WhatIDo from "./components/WhatIDo";
 import React from "react";
+import Links from "./components/Links";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Home />
 			<WhatIDo />
 			<About />
+			<Links />
 		</main>
 	);
 }

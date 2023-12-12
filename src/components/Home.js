@@ -41,7 +41,7 @@ export default function Home() {
 
 				<div className="timeline-home">
 					<div className="bullet-home bullet"></div>
-					<a href="#about-section">
+					<a href="#wid-section">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 32 32"

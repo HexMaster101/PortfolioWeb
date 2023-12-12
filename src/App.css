@@ -10,6 +10,10 @@
 	font-weight: 350;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	cursor: default;
 	overflow-x: hidden;
@@ -40,7 +44,7 @@ a {
 
 .timeline-home {
 	position: absolute;
-	height: 65%;
+	height: 67%;
 	bottom: 0;
 	left: 19%;
 	margin-left: 13.5px;
@@ -80,7 +84,7 @@ a {
 	position: absolute;
 	font-size: 16px;
 	font-weight: 500;
-	top: 35%;
+	top: 33%;
 	margin-top: -14px;
 	left: 19%;
 }
@@ -242,9 +246,12 @@ nav {
 }
 
 .skillsCon {
-	justify-content: center;
-	flex-direction: row;
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 36px;
+	flex-wrap: wrap;
 }
 
 .wid-list-container {
