@@ -211,15 +211,17 @@ nav {
 }
 
 .wid-content {
-	display: grid;
-	column-gap: 30px;
-	grid-template-columns: 580px 1fr;
+	display: flex;
+	gap: 80px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	height: 100%;
-	width: 100%;
 	padding: 30px 0px 30px 0px;
 }
 
 .wid-content .content {
+	max-width: 570px;
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
@@ -227,8 +229,6 @@ nav {
 }
 
 .lottie {
-	justify-self: end;
-	align-self: center;
 	position: relative;
 	z-index: 10;
 }
@@ -236,15 +236,34 @@ nav {
 .wid-subhead {
 	text-align: center;
 	font-weight: 400;
-	font-size: 28px;
+	font-size: 26px;
 	color: #64a7b8;
+	margin-bottom: 6px;
 }
 
 .skillsCon {
-	margin-top: 42px;
 	justify-content: center;
 	flex-direction: row;
 	display: flex;
+}
+
+.wid-list-container {
+	margin-top: 42px;
+}
+
+.wid-list {
+	padding-left: 10px;
+	margin-bottom: 6px;
+	font-size: 15px;
+	color: slategray;
+	font-weight: 400;
+}
+
+.wid-list::before {
+	content: "▹";
+	position: relative;
+	right: 13px;
+	color: #00ccff;
 }
 
 .skills {
@@ -303,7 +322,7 @@ nav {
 	color: gray;
 	content: attr(data-line-nr);
 	position: absolute;
-	margin-top: 7.25px;
+	margin-top: 4.25px;
 }
 
 .colorPink {
@@ -335,10 +354,10 @@ nav {
 }
 
 .codeLine h1 {
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 21.5px;
 	font-weight: 400;
-	padding: 4.25px 0;
+	padding: 4.5px 0;
 }
 
 .codeLine span {
