@@ -15,7 +15,7 @@ html {
 }
 
 body {
-	cursor: default;
+	cursor: none;
 	overflow-x: hidden;
 }
 
@@ -30,6 +30,7 @@ body {
 }
 
 a {
+	cursor: none;
 	text-decoration: none;
 }
 
@@ -38,6 +39,31 @@ a {
 	height: 100%;
 	max-width: 1600px;
 	margin: 0 auto;
+}
+
+/* <-------Cursor---------> */
+
+#cursor {
+	height: 6px;
+	width: 6px;
+	background-color: #000000;
+}
+
+#chaser {
+	height: 36px;
+	width: 36px;
+	background-color: #12526546;
+}
+
+#cursor,
+#chaser {
+	top: 0;
+	left: 0;
+	position: fixed;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	z-index: 110;
+	pointer-events: none;
 }
 
 /* <-----Vertical Line-----> */
@@ -184,8 +210,8 @@ nav {
 }
 
 .intro-text {
-	font-weight: 500;
-	font-size: 38px;
+	font-weight: 400;
+	font-size: 30px;
 }
 
 .my-name {
@@ -194,7 +220,7 @@ nav {
 }
 
 .word-design {
-	font-size: 50px;
+	font-size: 46px;
 	font-family: italicFont;
 	font-weight: 500;
 	color: #005a68;
@@ -202,7 +228,7 @@ nav {
 
 .intro-para {
 	margin-top: 32px;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 400;
 }
 
@@ -216,12 +242,17 @@ nav {
 
 .wid-content {
 	display: flex;
-	gap: 80px;
+	gap: 100px;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
 	padding: 30px 0px 30px 0px;
+}
+
+.lottie {
+	position: relative;
+	z-index: 10;
 }
 
 .wid-content .content {
@@ -230,11 +261,6 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.lottie {
-	position: relative;
-	z-index: 10;
 }
 
 .wid-subhead {
@@ -295,7 +321,7 @@ nav {
 /* <----About me----> */
 
 #about-section {
-	background-color: #ffffff;
+	background-color: #f4fafb;
 }
 
 .about-section {
@@ -367,8 +393,8 @@ nav {
 	padding: 4.5px 0;
 }
 
-.codeLine span {
-	font-weight: 500;
+.codeLine h1 span {
+	font-weight: 400;
 }
 
 span[name="dots"] {

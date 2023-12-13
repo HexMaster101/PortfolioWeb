@@ -11,7 +11,7 @@ export default function WhatIDo() {
 					<Lottie
 						animationData={lottieJson}
 						className="lottie"
-						style={{ height: 448, width: 448 }}
+						style={{ height: 448, aspectRatio: 1 / 1 }}
 					/>
 					<div className="content">
 						<h1 className="wid-subhead">Full Stack Development</h1>
