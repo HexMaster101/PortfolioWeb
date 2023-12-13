@@ -49,7 +49,9 @@ export default function Navbar({ name }) {
 						transition={{ delay: 0.7 }}
 						className="nav-links"
 					>
-						<a href="#about-section">About</a>
+						<a href="#about-section" className="link">
+							About
+						</a>
 					</motion.li>
 					<motion.li
 						variants={{
@@ -61,7 +63,9 @@ export default function Navbar({ name }) {
 						transition={{ delay: 0.8 }}
 						className="nav-links"
 					>
-						<a href="/">Contact</a>
+						<a href="/" className="link">
+							Contact
+						</a>
 					</motion.li>
 				</nav>
 			</div>

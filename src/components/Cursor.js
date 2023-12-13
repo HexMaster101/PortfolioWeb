@@ -5,6 +5,17 @@ export default function Cursor() {
 		const cursor = document.getElementById("cursor");
 		const chaser = document.getElementById("chaser");
 
+		let elementsArray = document.getElementsByClassName("link");
+		for (let i = 0; i < elementsArray.length; i++) {
+			elementsArray[i].addEventListener("mouseover", function () {
+				chaser.style.height = "82px";
+				chaser.style.transition = "all .35s";
+			});
+			elementsArray[i].addEventListener("mouseout", function () {
+				chaser.style.height = "40px";
+			});
+		}
+
 		const handleMouseMove = (e) => {
 			let posX = e.clientX;
 			let posY = e.clientY;

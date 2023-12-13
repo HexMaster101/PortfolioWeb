@@ -45,19 +45,18 @@ a {
 
 #cursor {
 	height: 6px;
-	width: 6px;
 	background-color: #000000;
 }
 
 #chaser {
-	height: 36px;
-	width: 36px;
+	height: 40px;
 	background-color: #12526546;
 }
 
 #cursor,
 #chaser {
 	top: 0;
+	aspect-ratio: 1/1;
 	left: 0;
 	position: fixed;
 	border-radius: 100%;
