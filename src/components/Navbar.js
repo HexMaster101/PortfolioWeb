@@ -62,7 +62,7 @@ export default function Navbar({ name }) {
 						transition={{ delay: 0.8 }}
 						className="nav-links"
 					>
-						<a href="/" className="link">
+						<a href="#contact-section" className="link">
 							Contact
 						</a>
 					</motion.li>

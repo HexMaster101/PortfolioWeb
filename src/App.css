@@ -34,6 +34,10 @@ a {
 	text-decoration: none;
 }
 
+button {
+	cursor: none;
+}
+
 .container {
 	position: relative;
 	height: 100%;
@@ -144,6 +148,7 @@ a {
 }
 
 .about-text {
+	margin-top: -2px;
 	display: inline-block;
 	position: absolute;
 	left: 19%;
@@ -260,7 +265,7 @@ nav {
 	font-weight: 400;
 }
 
-/* <----About me----> */
+/* <----What I DO SECTION----> */
 
 #wid-section {
 	height: 100vh;
@@ -346,14 +351,14 @@ nav {
 	width: 62px;
 }
 
-/* <----About me----> */
+/* <----About Section----> */
 
 #about-section {
 	background-color: #f4fafb;
 }
 
 .about-section {
-	padding-top: 80px;
+	padding: 80px 0 34px;
 }
 
 .myDetailsContainer {
@@ -366,7 +371,7 @@ nav {
 }
 
 .myDetailsContainer .codeLine:hover:after {
-	background-color: rgba(135, 207, 235, 0.423);
+	background-color: #87cfeb6c;
 	content: "";
 	height: 100%;
 	left: -24.8%;
@@ -427,4 +432,64 @@ nav {
 
 span[name="dots"] {
 	color: grey;
+}
+
+/* <----Contact Section----> */
+
+#contact-section {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-content-con {
+	height: 100vh;
+	max-height: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-content-inner-con {
+	position: relative;
+	z-index: 30;
+	width: 660px;
+	text-align: center;
+}
+
+.contact-head {
+	margin-bottom: 12px;
+	color: #64a7b8;
+	font-weight: 300;
+	font-size: 32px;
+}
+
+.contact-para {
+	margin-bottom: 32px;
+	font-weight: 330;
+	font-size: 16px;
+}
+
+.contact-link {
+	display: inline-block;
+	color: #64a7b8;
+}
+
+.contact-link span {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #64a7b8;
+	height: 50px;
+	width: 200px;
+	transition: all 0.5s;
+}
+
+.contact-link span:hover {
+	color: #ffffff;
+	background-color: #5a5ae3;
 }
