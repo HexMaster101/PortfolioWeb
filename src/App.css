@@ -65,6 +65,35 @@ a {
 	pointer-events: none;
 }
 
+/* <-------Links---------> */
+
+.sideBrand {
+	height: 174px;
+	width: 54px;
+	position: fixed;
+	transform: translate(0, -87px);
+	background-color: #303e42c3;
+	right: 0;
+	top: 50%;
+}
+
+.brandLogo {
+	margin-top: 10px;
+	font-family: italicFont;
+	font-size: 24px;
+}
+
+.brandText {
+	text-align: center;
+	color: #f4fafb;
+	font-weight: 500;
+}
+
+.brandPara {
+	font-size: 19px;
+	transform: translate(0, 74px) rotate(-90deg);
+}
+
 /* <-----Vertical Line-----> */
 
 .timeline-home {

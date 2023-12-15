@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import WhatIDo from "./components/WhatIDo";
 import Links from "./components/Links";
-import Cursor from "./components/Cursor";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
 	return (
@@ -15,7 +15,7 @@ function App() {
 			<WhatIDo />
 			<About />
 			<Links />
-			<Cursor />
+			<CustomCursor />
 		</main>
 	);
 }

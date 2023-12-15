@@ -1,6 +1,5 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import React from "react";
 
 const hideNavWhileScrolling = (id = "navbar", offset = 100, when = true) => {
 	const nav = document.getElementById(id);

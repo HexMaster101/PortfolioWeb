@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-export default function Cursor() {
+export default function CustomCursor() {
 	useEffect(() => {
 		const cursor = document.getElementById("cursor");
 		const chaser = document.getElementById("chaser");
@@ -23,8 +23,6 @@ export default function Cursor() {
 			cursor.style.left = `${posX}px`;
 			cursor.style.top = `${posY}px`;
 
-			// chaser.style.left = `${posX}px`;
-			// chaser.style.top = `${posY}px`;
 			chaser.animate(
 				{
 					left: `${posX}px`,
@@ -39,7 +37,7 @@ export default function Cursor() {
 		return () => {
 			window.removeEventListener("mousemove", handleMouseMove);
 		};
-	}, []); // Empty dependency array ensures the effect runs once after the initial render
+	}, []);
 
 	return (
 		<>

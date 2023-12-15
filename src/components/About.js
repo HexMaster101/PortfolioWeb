@@ -146,7 +146,7 @@ export default function About() {
 						<h1>
 							<span name="dots">· · · · · ·</span>{" "}
 							<span className="colorYellow">
-								'HTML/CSS/JS', 'Bootstrap', 'Node.js', 'React.js',
+								'HTML/CSS/JS/TS', 'Bootstrap', 'Node.js', 'React.js',
 								'npm/yarn/pnpm', 'Adobe-Photoshop', 'Adobe-Illustrator',
 								'Canva', 'Figma', 'Ui/Ux', 'Python', 'C++'
 							</span>
