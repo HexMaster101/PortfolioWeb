@@ -396,7 +396,7 @@ nav {
 }
 
 .colorPurple {
-	color: rgb(84, 26, 200);
+	color: rgb(84, 19, 216);
 }
 
 .colorBlue {
@@ -408,7 +408,7 @@ nav {
 }
 
 .colorGreen {
-	color: rgb(34, 168, 34);
+	color: rgb(42, 170, 42);
 }
 
 .colorYellow {
@@ -456,7 +456,7 @@ span[name="dots"] {
 .contact-content-inner-con {
 	position: relative;
 	z-index: 30;
-	width: 660px;
+	width: 630px;
 	text-align: center;
 }
 
@@ -471,6 +471,7 @@ span[name="dots"] {
 	margin-bottom: 32px;
 	font-weight: 330;
 	font-size: 16px;
+	color: black;
 }
 
 .contact-link {
@@ -492,4 +493,29 @@ span[name="dots"] {
 .contact-link span:hover {
 	color: #ffffff;
 	background-color: #5a5ae3;
+}
+
+footer {
+	opacity: 0;
+	transform: translateY(-15px);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute;
+	margin-bottom: 8px;
+	bottom: 0;
+	transition: all 0.5s;
+}
+
+.Link {
+	font-weight: 350;
+	color: #3d8a9b;
+	aspect-ratio: 1;
+	height: 27px;
+	margin: 0 16px;
+}
+
+.show {
+	opacity: 1 !important;
+	transform: translateY(0) !important;
 }
