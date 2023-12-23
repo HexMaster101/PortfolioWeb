@@ -116,6 +116,7 @@ button {
 }
 
 .timeline {
+	z-index: 0;
 	position: absolute;
 	height: 100%;
 	margin-left: 13.5px;
@@ -270,10 +271,15 @@ nav {
 #wid-section {
 	height: 100vh;
 	max-height: 800px;
-	background-color: #f4fafb;
+	background-color: #ffffff;
 }
 
 .wid-content {
+	position: relative;
+	z-index: 1;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 1s;
 	display: flex;
 	gap: 100px;
 	flex-direction: row;
@@ -284,6 +290,8 @@ nav {
 }
 
 .lottie {
+	height: 448px;
+	aspect-ratio: 1;
 	position: relative;
 	z-index: 10;
 }
@@ -354,7 +362,7 @@ nav {
 /* <----About Section----> */
 
 #about-section {
-	background-color: #f4fafb;
+	background-color: #ffffff;
 }
 
 .about-section {
@@ -362,6 +370,9 @@ nav {
 }
 
 .myDetailsContainer {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 1s;
 	padding-right: 20px;
 	margin: 0 0 0 19%;
 }
@@ -454,6 +465,9 @@ span[name="dots"] {
 }
 
 .contact-content-inner-con {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 1s;
 	position: relative;
 	z-index: 30;
 	width: 630px;
@@ -471,7 +485,7 @@ span[name="dots"] {
 	margin-bottom: 32px;
 	font-weight: 330;
 	font-size: 16px;
-	color: black;
+	color: rgb(135, 141, 145);
 }
 
 .contact-link {
@@ -518,4 +532,32 @@ footer {
 .show {
 	opacity: 1 !important;
 	transform: translateY(0) !important;
+}
+
+/* \\\\\\\\\\\ Media Query \\\\\\\\\\\ */
+
+@media (max-width: 1150px) {
+	#wid-section {
+		height: 100%;
+		max-height: 100%;
+		background-color: #ffffff;
+	}
+
+	.wid-content {
+		gap: 0px;
+		flex-direction: column-reverse;
+		padding: 120px 0px 30px 0px;
+	}
+
+	.wid-content .content {
+		max-width: 690px;
+		padding: 30px;
+	}
+
+	.content ul {
+		padding-left: 40px;
+	}
+}
+
+@media (max-width: 906px) {
 }

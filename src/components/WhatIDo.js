@@ -1,18 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import lottieJson from "/public/lottie-animation/Animation - 1702107952627";
 
 export default function WhatIDo() {
+	useEffect(() => {
+		const footer = document.getElementById("footer");
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					entry.target.classList.toggle("show", entry.isIntersecting);
+					if (entry.isIntersecting) observer.unobserve(entry.target);
+				});
+			},
+			{
+				threshold: 0.5,
+			}
+		);
+		const sections = document.getElementsByClassName("section");
+		for (let i = 0; i < sections.length; i++) {
+			observer.observe(sections[i]);
+		}
+		observer.observe(footer);
+	}, []);
 	return (
 		<section id="wid-section">
 			<div className="container">
 				<p className="about-text">whatIDo/{">"}</p>
-				<div className="wid-content">
-					<Lottie
-						animationData={lottieJson}
-						className="lottie"
-						style={{ height: 448, aspectRatio: 1 / 1 }}
-					/>
+				<div className="wid-content section">
+					<Lottie animationData={lottieJson} className="lottie" />
 					<div className="content">
 						<h1 className="wid-subhead">Full Stack Development</h1>
 						<div className="skillsCon">
@@ -230,8 +245,8 @@ export default function WhatIDo() {
 											gradientTransform="matrix(189.38 0 0 189.81 25243.061 38519.17)"
 											gradientUnits="userSpaceOnUse"
 										>
-											<stop offset="0" stop-color="#387eb8"></stop>
-											<stop offset="1" stop-color="#366994"></stop>
+											<stop offset="0" stopColor="#387eb8"></stop>
+											<stop offset="1" stopColor="#366994"></stop>
 										</linearGradient>
 										<linearGradient
 											id="iconifyReact1"
@@ -242,8 +257,8 @@ export default function WhatIDo() {
 											gradientTransform="matrix(189.38 0 0 189.81 25309.061 38583.42)"
 											gradientUnits="userSpaceOnUse"
 										>
-											<stop offset="0" stop-color="#ffe052"></stop>
-											<stop offset="1" stop-color="#ffc331"></stop>
+											<stop offset="0" stopColor="#ffe052"></stop>
+											<stop offset="1" stopColor="#ffc331"></stop>
 										</linearGradient>
 									</defs>
 									<path
@@ -348,8 +363,8 @@ export default function WhatIDo() {
 											y1="32%"
 											y2="67.556%"
 										>
-											<stop offset="0%" stop-color="#2298BD"></stop>
-											<stop offset="100%" stop-color="#0ED7B5"></stop>
+											<stop offset="0%" stopColor="#2298BD"></stop>
+											<stop offset="100%" stopColor="#0ED7B5"></stop>
 										</linearGradient>
 									</defs>
 									<path

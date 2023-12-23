@@ -5,7 +5,7 @@ export default function About() {
 		<section id="about-section">
 			<div className="container about-section">
 				<p className="about-text">About/{">"}</p>
-				<div className="myDetailsContainer">
+				<div className="myDetailsContainer section">
 					<div data-line-nr="01" className="codeLine">
 						<h1>
 							<span className="colorPink">class</span>{" "}
