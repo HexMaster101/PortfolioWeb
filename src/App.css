@@ -560,4 +560,60 @@ footer {
 }
 
 @media (max-width: 906px) {
+	.timeline-home {
+		left: 0;
+		transform: translate(40px, 0px);
+	}
+
+	.bullet-home {
+		background-color: transparent !important;
+		top: -9px !important;
+	}
+
+	.timeline {
+		left: 0;
+		transform: translate(40px, 0px);
+	}
+
+	.home-text {
+		transform: translate(75px, 0px);
+		left: 0;
+	}
+
+	.about-text {
+		transform: translate(75px, 0px);
+		left: 0;
+	}
+
+	.myDetailsContainer {
+		opacity: 0;
+		transform: translateY(100px);
+		margin: 0 0 0 78px;
+	}
+
+	.myDetailsContainer .codeLine:hover:after {
+		left: 0;
+		transform: translateX(-78px);
+		width: 100vw;
+	}
+
+	.intro {
+		margin-top: 60px;
+		margin-left: 110px;
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 740px) {
+	.intro-text {
+		font-size: 26px;
+	}
+
+	.word-design {
+		font-size: 34px;
+	}
+
+	.intro-para {
+		font-size: 16px;
+	}
 }
