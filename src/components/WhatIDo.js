@@ -1,27 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Lottie from "lottie-react";
-import lottieJson from "/public/lottie-animation/Animation - 1702107952627";
+import lottieJson from "/public/lottie-animation/designing";
 
 export default function WhatIDo() {
-	useEffect(() => {
-		const footer = document.getElementById("footer");
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					entry.target.classList.toggle("show", entry.isIntersecting);
-					if (entry.isIntersecting) observer.unobserve(entry.target);
-				});
-			},
-			{
-				threshold: 0.5,
-			}
-		);
-		const sections = document.getElementsByClassName("section");
-		for (let i = 0; i < sections.length; i++) {
-			observer.observe(sections[i]);
-		}
-		observer.observe(footer);
-	}, []);
 	return (
 		<section id="wid-section">
 			<div className="container">

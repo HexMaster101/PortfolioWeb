@@ -72,6 +72,7 @@ button {
 /* <-------Links---------> */
 
 .sideBrand {
+	z-index: 20;
 	height: 174px;
 	width: 54px;
 	position: fixed;
@@ -232,15 +233,14 @@ nav {
 
 .home-background {
 	height: 100vh;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
 }
 
 .intro {
+	position: absolute;
+	top: 33%;
 	margin-top: 60px;
-	margin-left: 19%;
-	padding-left: 40px;
+	left: 19%;
+	margin-left: 40px;
 }
 
 .intro-text {
@@ -290,9 +290,10 @@ nav {
 }
 
 .lottie {
-	height: 448px;
+	width: 448px;
 	aspect-ratio: 1;
 	position: relative;
+	top: -20px;
 	z-index: 10;
 }
 
@@ -550,19 +551,51 @@ footer {
 	}
 
 	.wid-content .content {
-		max-width: 690px;
+		max-width: 620px;
 		padding: 30px;
 	}
 
-	.content ul {
-		padding-left: 40px;
+	.wid-list-container {
+		margin-top: 42px;
+	}
+
+	.wid-list {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.wid-list::before {
+		content: "";
 	}
 }
 
 @media (max-width: 906px) {
+	.intro-text {
+		font-size: 29px;
+	}
+
+	.word-design {
+		font-size: 36px;
+	}
+	.intro {
+		margin-left: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	#cursor {
+		display: none;
+	}
+
+	#chaser {
+		display: none;
+	}
+}
+
+@media (max-width: 740px) {
 	.timeline-home {
 		left: 0;
-		transform: translate(40px, 0px);
+		transform: translate(30px, 0px);
 	}
 
 	.bullet-home {
@@ -572,39 +605,24 @@ footer {
 
 	.timeline {
 		left: 0;
-		transform: translate(40px, 0px);
+		transform: translate(30px, 0px);
 	}
 
 	.home-text {
-		transform: translate(75px, 0px);
+		transform: translate(65px, 0px);
 		left: 0;
 	}
 
 	.about-text {
-		transform: translate(75px, 0px);
+		transform: translate(65px, 0px);
 		left: 0;
-	}
-
-	.myDetailsContainer {
-		opacity: 0;
-		transform: translateY(100px);
-		margin: 0 0 0 78px;
-	}
-
-	.myDetailsContainer .codeLine:hover:after {
-		left: 0;
-		transform: translateX(-78px);
-		width: 100vw;
 	}
 
 	.intro {
-		margin-top: 60px;
-		margin-left: 110px;
-		padding-left: 0;
+		left: 0;
+		margin-left: 90px;
 	}
-}
 
-@media (max-width: 740px) {
 	.intro-text {
 		font-size: 26px;
 	}
@@ -615,5 +633,52 @@ footer {
 
 	.intro-para {
 		font-size: 16px;
+	}
+
+	.wid-list-container {
+		position: relative;
+		padding-left: 30px;
+	}
+
+	.wid-list {
+		font-size: 13px;
+		padding-left: 0;
+		text-align: left;
+	}
+
+	.wid-list::before {
+		content: "";
+		right: 0;
+	}
+
+	.myDetailsContainer {
+		transform: translateY(100px);
+		margin: 0 0 0 66px;
+	}
+
+	.codeLine::before {
+		transform: translate(-52px, 0);
+	}
+
+	.myDetailsContainer .codeLine:hover:after {
+		left: 0;
+		transform: translateX(-66px);
+		width: 100vw;
+	}
+
+	.contact-para {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 560px) {
+	span[name="dots"] {
+		display: none;
+	}
+}
+
+@media (max-width: 448px) {
+	.lottie {
+		width: 100%;
 	}
 }
