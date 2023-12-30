@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import lottieJson from "/public/lottie-animation/designing";
+import lottieJson from "/public/lottie-animation/Animation - 1703957815645";
 
 export default function WhatIDo() {
 	return (
