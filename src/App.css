@@ -478,9 +478,9 @@ span[name="dots"] {
 
 .contact-para {
 	margin-bottom: 32px;
-	font-weight: 330;
+	font-weight: 350;
 	font-size: 16px;
-	color: rgb(135, 141, 145);
+	color: rgb(61, 65, 67);
 }
 
 .contact-link {
@@ -622,6 +622,10 @@ footer {
 		font-size: 16px;
 	}
 
+	.lottie {
+		padding: 10px;
+	}
+
 	.wid-list-container {
 		position: relative;
 		padding-left: 30px;
@@ -661,15 +665,17 @@ footer {
 	span[name="dots"] {
 		display: none;
 	}
-
-	.lottie {
-		padding: 30px;
-		width: 100%;
-	}
 }
 
 @media (max-width: 448px) {
 	.lottie {
 		width: 100%;
+		padding: 30px;
+	}
+}
+
+@media (max-width: 390px) {
+	.lottie {
+		padding: 15px;
 	}
 }
