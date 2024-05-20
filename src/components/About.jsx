@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function About() {
 	return (
 		<section id="about-section">
@@ -8,7 +6,7 @@ export default function About() {
 				<div className="myDetailsContainer section">
 					<div data-line-nr="01" className="codeLine">
 						<h1>
-							<span className="colorPink">class</span>{" "}
+							<span className="colorPink">class</span>
 							<span className="colorBlue">Tanishk_Gupta( )</span>:
 						</h1>
 					</div>

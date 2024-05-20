@@ -6,7 +6,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: myFont;
 	font-weight: 350;
 }
 
@@ -20,13 +19,8 @@ body {
 }
 
 @font-face {
-	font-family: myFont;
-	src: url(font/WorkSans-VariableFont_wght.ttf);
-}
-
-@font-face {
 	font-family: italicFont;
-	src: url(font/Ephesis-Regular.ttf);
+	src: url("/font/Ephesis-Regular.ttf");
 }
 
 a {
@@ -228,7 +222,7 @@ nav {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url("images/background-1747784_1920.jpg");
+	background-image: url("/images/home.jpg");
 }
 
 .home-background {
