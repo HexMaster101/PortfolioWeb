@@ -1,3 +1,5 @@
+import Button from "./utils/button";
+
 export default function Links() {
 	return (
 		<>
@@ -13,14 +15,11 @@ export default function Links() {
 								weather you have a project to discuss or just want to say "Hey",
 								My inbox is open for all!
 							</p>
-							<a
-								className="contact-link link"
+							<Button
+								text="Say Hey!!"
 								href="mailto:luckygupta9219@gmail.com"
 								target="_blank"
-								rel="noreferrer"
-							>
-								<span className="">Say Hey!!</span>
-							</a>
+							/>
 						</div>
 						<footer id="footer">
 							<a

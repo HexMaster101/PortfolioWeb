@@ -35,7 +35,8 @@ button {
 .container {
 	position: relative;
 	height: 100%;
-	max-width: 1600px;
+	max-width: 1540px;
+	padding: 0 80px;
 	margin: 0 auto;
 }
 
@@ -178,7 +179,7 @@ span[name="scroll-button"] {
 	left: 0;
 	right: 0;
 	backdrop-filter: blur(2px);
-	padding: 16px 14px;
+	padding: 16px 0px;
 	transition: all 1s;
 }
 
@@ -189,31 +190,38 @@ span[name="scroll-button"] {
 }
 
 .nav-head {
-	font-size: 22px;
-	margin-left: 4px;
+	font-weight: 300;
+	font-size: 34px;
+	display: flex;
+	align-items: center;
 }
 
 nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	list-style: none;
-	margin-right: 10px;
+	gap: 30px;
 }
 
 .nav-links {
-	font-size: 18px;
-	margin-left: 8px;
+	font-size: 20px;
 }
 
 .nav-links a {
-	padding: 8px 4px;
+	font-weight: 250;
+	padding: 10px 0px;
 	color: black;
 }
 
 .nav-links a:hover {
-	color: #80adb9;
+	color: #64a7b8;
+}
+
+.resume {
+	display: flex;
+	align-items: center;
 }
 
 /* <----Home Section----> */
@@ -478,18 +486,15 @@ span[name="dots"] {
 }
 
 .contact-link {
-	display: inline-block;
-	color: #64a7b8;
+	display: flex;
+	align-items: center;
 }
 
 .contact-link span {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	margin: auto;
 	border: 1px solid #64a7b8;
-	height: 50px;
-	width: 200px;
+	color: #64a7b8;
+	padding: 10px 50px;
 	transition: all 0.5s;
 }
 

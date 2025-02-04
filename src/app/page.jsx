@@ -9,7 +9,7 @@ import CustomCursor from "@/components/CustomCursor";
 function App() {
 	return (
 		<main name="inner">
-			<Navbar name="Tanishk Gupta | Portfolio" />
+			<Navbar name="PORTFOLIO WEB" />
 			<Home />
 			<WhatIDo />
 			<About />

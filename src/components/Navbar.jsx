@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Button from "./utils/button";
 
 const hideNavWhileScrolling = (id = "navbar", offset = 100, when = true) => {
 	const nav = document.getElementById(id);
@@ -29,6 +30,11 @@ export default function Navbar({ name }) {
 				<nav>
 					<li className="nav-links">
 						<a href="#about-section" className="link">
+							WhatIDO
+						</a>
+					</li>
+					<li className="nav-links">
+						<a href="#about-section" className="link">
 							About
 						</a>
 					</li>
@@ -38,6 +44,7 @@ export default function Navbar({ name }) {
 						</a>
 					</li>
 				</nav>
+				<Button text="My Resume" href="#" target="_self" />
 			</div>
 		</header>
 	);
