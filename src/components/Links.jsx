@@ -1,4 +1,4 @@
-import Button from "./utils/button";
+import Button from "./utils/Button";
 
 export default function Links() {
 	return (

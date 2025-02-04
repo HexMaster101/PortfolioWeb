@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import Button from "./utils/button";
+import Button from "./utils/Button";
 
 const hideNavWhileScrolling = (id = "navbar", offset = 100, when = true) => {
 	const nav = document.getElementById(id);
